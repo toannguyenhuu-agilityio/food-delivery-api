@@ -1,0 +1,15 @@
+# Operating system files
+*.DS_Store
+
+# Node modules directory
+node_modules/
+
+# Environment variable files
+.env
+.env.prod
+
+# Log files
+*.log
+
+# VSCode settings
+.vscode/
