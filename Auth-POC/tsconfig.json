@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS", // Use ESNext modules for proper ES module support
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true, // Prevent emitting compiled .js files, since we want to run TS directly
+    "allowImportingTsExtensions": true, // Allow importing .ts extensions in import statements
+    "resolveJsonModule": true
+  },
+  "include": ["src/index.ts"]
+}
