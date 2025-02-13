@@ -23,6 +23,7 @@ services:
     volumes:
       # Mount the source code to allow hot reloading with nodemon
       - ./src:/usr/src/app/src
+      - ./.env:/usr/src/app/.env
     command: ["nodemon", "src/index.ts"]
 
 volumes:

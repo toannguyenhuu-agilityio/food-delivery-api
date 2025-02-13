@@ -11,7 +11,7 @@ const database = process.env.POSTGRES_DB || "FoodDeliveryDB";
 
 export const AppDataSource = new DataSource({
   type: "postgres",
-  host: host,
+  host: "db",
   port: Number(port),
   username: user,
   password: password,
@@ -19,4 +19,6 @@ export const AppDataSource = new DataSource({
   entities: ["src/entities/*.ts"],
   logging: true,
   synchronize: true,
+  migrations: ["src/migrations/*.ts"],
+  migrationsTableName: "migrations",
 });
